@@ -5,6 +5,8 @@
 
 #include <gmp.h>
 
+#define MPZ_CMP(A, OP, B) mpz_cmp((A), (B)) OP 0
+
 typedef const char *str;
 
 struct opts {
@@ -79,7 +81,7 @@ int main(int argc, char **argv) {
     }
 
     for (;;) {
-        if (opts.end && (mpz_cmp(n, end) > 0)) {
+        if (opts.end && MPZ_CMP(n, >, end)) {
             break;
         }
         mpz_out_str(stdout, 10, n);
