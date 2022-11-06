@@ -12,7 +12,7 @@ int main(void) {
     }
 
     mpz_init(n);
-    mpz_set_ui(n, i + 1);
+    mpz_set_ui(n, i);
     for (;;) {
         mpz_out_str(stdout, 10, n);
         puts("");
