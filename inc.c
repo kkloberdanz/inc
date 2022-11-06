@@ -57,6 +57,7 @@ int main(int argc, char **argv) {
 
     err = parse_opts(argc, argv, &opts);
     if (err) {
+        print_usage();
         goto done;
     }
 
