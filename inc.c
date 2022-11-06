@@ -14,7 +14,8 @@ struct opts {
 
 static void print_usage(void) {
     str msg = "inc:\n"
-              "\t-b <int>\tnumber to begin with\n\n";
+              "\t-b <int>\tstarting number\n\n"
+              "\t-e <int>\tending number\n\n";
     fprintf(stderr, "%s", msg);
 }
 
