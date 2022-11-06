@@ -70,10 +70,10 @@ int main(int argc, char **argv) {
     mpz_init(end);
     mpz_init(begin);
 
-    mpz_set_ui(n, i);
-
     if (opts.begin) {
         mpz_set_str(n, opts.begin, 10);
+    } else {
+        mpz_set_ui(n, i);
     }
 
     if (opts.end) {
