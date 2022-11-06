@@ -1,7 +1,8 @@
-#include <gmp.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include <gmp.h>
 
 int main(void) {
     mpz_t n;
